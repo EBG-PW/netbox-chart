@@ -156,6 +156,9 @@ fieldChoices: {}
   # 'dcim.Site.status+':
   #   ...
 
+# Set Max File Upload Size
+fileUploadMaxMemorySize: 2621440  # 2.5 MB
+
 # Enable the GraphQL API
 graphQlEnabled: true
 

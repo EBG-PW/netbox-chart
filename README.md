@@ -179,6 +179,7 @@ The following table lists the configurable parameters for this chart and their d
 | `enforceGlobalUnique`                           | Enforce unique IP space in the global table (not in a VRF)          | `false`                                      |
 | `exemptViewPermissions`                         | A list of models to exempt from the enforcement of view permissions | `[]`                                         |
 | `fieldChoices`                                  | Configure custom choices for certain built-in fields                | `{}`                                         |
+| `fileUploadMaxMemorySize`                       | Set maxmium upload file site                                        | `2621440`                                    |
 | `graphQlEnabled`                                | Enable the GraphQL API                                              | `true`                                       |
 | `httpProxies`                                   | HTTP proxies NetBox should use when sending outbound HTTP requests  | `null`                                       |
 | `internalIPs`                                   | IP addresses recognized as internal to the system                   | `['127.0.0.1', '::1']`                       |

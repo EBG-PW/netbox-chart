@@ -118,6 +118,7 @@ data:
     ENFORCE_GLOBAL_UNIQUE: {{ toJson .Values.enforceGlobalUnique }}
     EXEMPT_VIEW_PERMISSIONS: {{ toJson .Values.exemptViewPermissions }}
     FIELD_CHOICES: {{ toJson .Values.fieldChoices }}
+    FILE_UPLOAD_MAX_MEMORY_SIZE: {{ int .Values.fileUploadMaxMemorySize }}
     GRAPHQL_ENABLED: {{ toJson .Values.graphQlEnabled }}
     HTTP_PROXIES: {{ toJson .Values.httpProxies }}
     INTERNAL_IPS: {{ toJson .Values.internalIPs }}
