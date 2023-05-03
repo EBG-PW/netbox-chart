@@ -339,7 +339,7 @@ sessionCookieName: sessionid
 
 # Whether to set the "secure" flag on the session cookie. If this is True, the
 # cookie will only be sent over HTTPS.
-sessionCookieSecure: False
+sessionCookieSecure: false
 
 # Localization
 enableLocalization: false
