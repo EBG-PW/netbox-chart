@@ -163,6 +163,7 @@ The following table lists the configurable parameters for this chart and their d
 | `cors.originRegexWhitelist`                     | [CORS]: list of regex strings matching authorised origins           | `[]`                                         |
 | `csrf.cookieName`                               | Name of the CSRF authentication cookie                              | `csrftoken`                                  |
 | `csrf.trustedOrigins`                           | A list of trusted origins for unsafe (e.g. POST) requests           | `[]`                                         |
+| `csrf.cookieSecure`                             | Only send CSRF over https connection                                | `false`                                      |
 | `debug`                                         | Enable NetBox debugging (NOT for production use)                    | `false`                                      |
 | `defaultLanguage`                               | Set the default preferred language/locale                           | `en-us`                                      |
 | `dbWaitDebug`                                   | Show details of errors that occur when applying migrations          | `false`                                      |
@@ -243,7 +244,9 @@ The following table lists the configurable parameters for this chart and their d
 | `remoteAuth.ldap.attrMail`                      | mail attribute of users, "email_name"-Attribute of [AUTH_LDAP_USER_ATTR_MAP](https://django-auth-ldap.readthedocs.io/en/latest/reference.html#auth-ldap-user-attr-map) | `mail` |
 | `releaseCheck.url`                              | Release check URL (GitHub API URL; see `values.yaml`)               | `null` (disabled by default)                 |
 | `rqDefaultTimeout`                              | Maximum execution time for background tasks, in seconds             | `300` (5 minutes)                            |
+| `secureSSLRedirect`                             | Redirect non-HTTPS requests to use HTTPs if true                    | `false`                                      |
 | `sessionCookieName`                             | The name to use for the session cookie                              | `"sessionid"`                                |
+| `sessionCookieSecure`                           | Only send session cookie via https                                  | `false`                                      |
 | `enableLocalization`                            | Localization                                                        | `false`                                      |
 | `timeZone`                                      | The time zone NetBox will use when dealing with dates and times     | `UTC`                                        |
 | `dateFormat`                                    | Django date format for long-form date strings                       | `"N j, Y"`                                   |

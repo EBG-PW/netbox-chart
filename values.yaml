@@ -100,6 +100,9 @@ csrf:
   # a pass-through to Django's CSRF_TRUSTED_ORIGINS setting. Note that each
   # host listed must specify a scheme (e.g. http:// or `https://).
   trustedOrigins: []
+  # If set to true, the CSRF cookie will be marked as "secure", which means browsers
+  # may ensure that the cookie is only sent with an HTTPS connection.
+  cookieSecure: false
 
 # Note: this is where the CUSTOM_VALIDATORS setting naturally fits in relation
 # to the upstream NetBox configuration, but the setting cannot be reflected in
@@ -327,8 +330,16 @@ releaseCheck:
 # Maximum execution time for background tasks, in seconds.
 rqDefaultTimeout: 300  # 5 mins
 
+# The default queue for background tasks. Tasks which do not specify a queue
+# will be assigned to this queue.
+secureSSLRedirect: False
+
 # The name to use for the session cookie.
 sessionCookieName: sessionid
+
+# Whether to set the "secure" flag on the session cookie. If this is True, the
+# cookie will only be sent over HTTPS.
+sessionCookieSecure: False
 
 # Localization
 enableLocalization: false

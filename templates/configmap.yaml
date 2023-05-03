@@ -202,7 +202,10 @@ data:
     RQ_DEFAULT_TIMEOUT: {{ .Values.rqDefaultTimeout | int }}
     SCRIPTS_ROOT: /opt/netbox/netbox/scripts
     CSRF_COOKIE_NAME: {{ .Values.csrf.cookieName | quote }}
+    CSRF_COOKIE_SECURE: {{ toJson .Values.csrf.cookieSecure }}
+    SECURE_SSL_REDIRECT: {{ toJson .Values.secureSSLRedirect }}
     SESSION_COOKIE_NAME: {{ .Values.sessionCookieName }}
+    SESSION_COOKIE_SECURE: {{ toJson .Values.sessionCookieSecure }}
     ENABLE_LOCALIZATION: {{ toJson .Values.enableLocalization }}
     TIME_ZONE: {{ .Values.timeZone | quote }}
     DATE_FORMAT: {{ .Values.dateFormat | quote }}
