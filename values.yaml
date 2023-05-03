@@ -177,8 +177,8 @@ internalIPs: ['127.0.0.1', '::1']
 
 # The number of days to retain job results (scripts and reports). Set this to 0
 # to retain job results in the database indefinitely.
-# https://docs.netbox.dev/en/stable/configuration/dynamic-settings/#jobresult_retention
-jobResultRetention: 90
+# https://docs.netbox.dev/en/stable/configuration/miscellaneous/#job_retention
+jobRetention: 90
 
 # Enable custom logging. Please see the Django documentation for detailed
 # guidance on configuring custom logs:

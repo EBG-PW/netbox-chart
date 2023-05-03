@@ -184,7 +184,7 @@ The following table lists the configurable parameters for this chart and their d
 | `graphQlEnabled`                                | Enable the GraphQL API                                              | `true`                                       |
 | `httpProxies`                                   | HTTP proxies NetBox should use when sending outbound HTTP requests  | `null`                                       |
 | `internalIPs`                                   | IP addresses recognized as internal to the system                   | `['127.0.0.1', '::1']`                       |
-| `jobResultRetention`                            | The number of days to retain job results (scripts and reports)      | `90`                                         |
+| `jobRetention`                            | The number of days to retain job results (scripts and reports)      | `90`                                         |
 | `logging`                                       | Custom Django logging configuration                                 | `{}`                                         |
 | `loginPersistence`                              | Enables users to remain authenticated to NetBox indefinitely        | `false`                                      |
 | `loginRequired`                                 | Permit only logged-in users to access NetBox                        | `false` (unauthenticated read-only access)   |
